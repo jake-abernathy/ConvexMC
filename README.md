@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/jake-abernathy/ConvexMC/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jake-abernathy/ConvexMC/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>BrutalNetwork - Portal</title>
+ 
+<meta name="description" content="BrutalNetwork Minecraft Server Portal">
+<meta name="tags" content="minecraft, website, play, mc, factions, opfactions, server, network, brutal">
+ 
+<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+<link rel="stylesheet" type="text/css" href="css/hint.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link href="https://use.fontawesome.com/d661e41fb9.css" rel="stylesheet">
+<!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+<body>
+<div class="animated fadeIn logo">
+<li><img src="images/Logo.png"/></li>
+</div>
+<div id="players" class="zoomIn animated hint--top hint--medium hint--rounded hint--bounce btn-ip" aria-label="Click to copy the IP!" data-clipboard-text="brutalnetwork.net">
+<p class="p1"></p>
+<div class="player-count animated"></div>
+<p class="p2"></p>
+</div>
+<div class="links">
+<a class="home animated fadeInDown" href="http://forums.brutalnetwork.net/index.php?portal/"><li></li>Home</a>
+<a class="forums animated fadeInUp" href="http://forums.brutalnetwork.net/index.php"><li></li>Forums</a>
+<a class="vote animated fadeInDown" href="http://forums.brutalnetwork.net/index.php?pages/vote/"><li></li>Vote</a>
+<a class="donate animated fadeInUp" href="http://store.brutalnetwork.net"><li></li>Donate</a>
+</div>
+ 
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.firefly-0.3.js"></script>
+<script type="text/javascript" src="js/clipboard.min.js"></script>
+<script type="text/javascript" src="js/core.js"></script>
+<script type="text/javascript">
+    $.firefly({
+        color: 'red',
+        minPixel: 1,
+        maxPixel: 3,
+        total : 15,
+        on: 'body'
+    });
+    $.firefly({
+        color: 'gold',
+        minPixel: 1,
+        maxPixel: 3,
+        total : 15,
+        on: 'body'
+    });
+</script>
+</body>
+</html>
